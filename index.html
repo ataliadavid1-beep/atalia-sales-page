@@ -325,6 +325,20 @@ strong {
   aspect-ratio: 4 / 3;
 }
 
+.media-frame--portrait {
+  aspect-ratio: 9 / 16;
+  max-width: 340px;
+  margin: 0 auto;
+  border-style: solid;
+}
+
+.media-frame--portrait video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .play-badge {
   width: 56px;
   height: 56px;
@@ -943,14 +957,13 @@ footer {
   <!-- Hero - Section 1: Hook -->
   <section class="hero">
     <div class="wrap">
-      <p class="eyebrow">מרגישה שלא משנה כמה את מסדרת, תוך יומיים הבית שוב חוזר לאותו בלגן?</p>
-      <h1>בתוך 6 שבועות תבני לבית שלך שיטה שתעזור לסדר להחזיק, גם כשהחיים עמוסים ויש ילדים קטנים</h1>
+      <p class="eyebrow">מרגישה שלא משנה כמה את מסדרת — הבלגן תמיד חוזר?</p>
+      <h1>בתוך 6 שבועות תיצרי בית מסודר, רגוע ונעים שכיף לחזור אליו — גם עם ילדים קטנים וחיים עמוסים</h1>
       <p class="lede">בליווי אישי שמתאים את הסדר לבית שלך, ולדרך שבה המשפחה שלך באמת חיה.</p>
       <p class="micro">בלי לנסות עוד פתרונות שלא באמת מחזיקים לאורך זמן,<br>בלי להזמין מסדרת בתים שתעשה סדר זמני ותשאיר אותך עם אותה הבעיה,<br>ובלי לריב עם כל הבית על הבלגן.</p>
       <p class="lede" style="margin-top:16px;">כדי שתוכלי להרגיש נעים בבית שלך, וגם לארח בלי להיכנס ללחץ.</p>
-      <div class="media-frame">
-        <div class="play-badge"></div>
-        <span>מקום לסרטון שלך</span>
+      <div class="media-frame media-frame--portrait">
+        <video src="assets/atalia-hero-video.mp4" poster="assets/atalia-hero-poster.jpg" controls playsinline preload="metadata"></video>
       </div>
 
     </div>
